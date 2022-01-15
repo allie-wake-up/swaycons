@@ -23,9 +23,7 @@ fn main() -> Fallible<()> {
                                 },
                                 None => {
                                     ignore.push(id);
-                                    ignore.push(id);
-                                    ignore.push(id);
-                                    connection.run_command("[title=\"google\\.com\"] title_format \"%title\"")?;
+                                    connection.run_command(format!("[title={}] title_format \"%title\"", name))?;
                                 }
                             }
                         }

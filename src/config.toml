@@ -1,0 +1,19 @@
+[global]
+size = "14pt"
+color = "#FFFFFF"
+icon = ""
+
+[app_id]
+
+[title]
+"www.google.com" = { icon = "", color = "#397CD8" }
+"mail.google.com" = { icon = "", color = "#ad1f1c" }
+"messages.google.com" = { icon = "", color = "#397CD8" }
+"github.com" = { icon = "", color = "#FFFFFF" }
+"fastmail.com" = { icon = "﫯", color = "#1565c0" }
+"stackoverflow.com" = { icon = "", color = "#f48225" }
+"atlassian.net" = { icon = "", color = "#0052cc" }
+"bitbucket.org" = { icon = "", color = "#0052cc" }
+"docs.rs" = { icon = "", color = "#FFFFFF" }
+"rust-lang.org" = { icon = "", color = "#FFFFFF" }
+"nerdfonts.com" = { icon = "" }

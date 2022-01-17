@@ -4,11 +4,18 @@ color = "#FFFFFF"
 icon = ""
 
 [app_id]
+foot = { icon = "", color = "#FFFFFF" }
+Alacritty = { icon = "", color = "#FFFFFF" }
+firefox = { icon = "", color = "#ff8817" }
+neovide = { icon = "", color = "#8fff6d" }
+nvim-qt = { icon = "", color = "#8fff6d" }
+Slack = { icon = "聆", color = "#2eb67d" }
 
 [title]
-"www.google.com" = { icon = "", color = "#397CD8" }
+"www.google.com" = { icon = "", color = "#4285f4" }
 "mail.google.com" = { icon = "", color = "#ad1f1c" }
-"messages.google.com" = { icon = "", color = "#397CD8" }
+"messages.google.com" = { icon = "", color = "#4285f4" }
+"drive.google.com" = { icon = "", color = "#4285f4" }
 "github.com" = { icon = "", color = "#FFFFFF" }
 "fastmail.com" = { icon = "﫯", color = "#1565c0" }
 "stackoverflow.com" = { icon = "", color = "#f48225" }
@@ -17,3 +24,5 @@ icon = ""
 "docs.rs" = { icon = "", color = "#FFFFFF" }
 "rust-lang.org" = { icon = "", color = "#FFFFFF" }
 "nerdfonts.com" = { icon = "" }
+"slack.com" = { icon = "聆", color = "#2eb67d" }
+vim = { app_id = "foot", icon = "", color = "#8fff6d" }

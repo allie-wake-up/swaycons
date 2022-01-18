@@ -4,25 +4,50 @@ color = "#FFFFFF"
 icon = ""
 
 [app_id]
-foot = { icon = "", color = "#FFFFFF" }
+"dev.alextren.Spot" = { icon = "阮", color = "#1ed760" }
+"org.gnome.Nautilus" = { icon = "", color = "#6291d6" }
 Alacritty = { icon = "", color = "#FFFFFF" }
+Deezer = { icon = "", color = "#ef5466" }
+Slack = { icon = "聆", color = "#2eb67d" }
+Spotify = { icon = "阮", color = "#1ed760" }
 firefox = { icon = "", color = "#ff8817" }
+foot = { icon = "", color = "#FFFFFF" }
+geary = { icon = "", color = "#f6d32d" }
+gnome-calendar = { icon = "", color = "#3584e4" }
+google-chrome = { icon = "", color = "#4285f4" }
 neovide = { icon = "", color = "#8fff6d" }
 nvim-qt = { icon = "", color = "#8fff6d" }
-Slack = { icon = "聆", color = "#2eb67d" }
+zoom = { icon = "", color = "#2d8cff" }
 
 [title]
-"www.google.com" = { icon = "", color = "#4285f4" }
-"mail.google.com" = { icon = "", color = "#ad1f1c" }
-"messages.google.com" = { icon = "", color = "#4285f4" }
-"drive.google.com" = { icon = "", color = "#4285f4" }
-"github.com" = { icon = "", color = "#FFFFFF" }
-"fastmail.com" = { icon = "﫯", color = "#1565c0" }
-"stackoverflow.com" = { icon = "", color = "#f48225" }
+"192.168.0.1" = { icon = "直", color = "#004cb6" }
+"192.168.86.1" = { icon = "直", color = "#004cb6" }
+"amazon.com" = { icon = "", color = "#ff9900" }
 "atlassian.net" = { icon = "", color = "#0052cc" }
 "bitbucket.org" = { icon = "", color = "#0052cc" }
+"calendar.google.com" = { icon = "", color = "#4285f4" }
+"deezer.com" = { icon = "", color = "#ef5466" }
 "docs.rs" = { icon = "", color = "#FFFFFF" }
+"drive.google.com" = { icon = "", color = "#4285f4" }
+"duckduckgo.com" = { icon = "", color = "#de5833" }
+"facebook.com" = { icon = "", color = "#1877f2" }
+"fastmail.com" = { icon = "﫯", color = "#1565c0" }
+"feedbin.com" = { icon = "", color = "#FFFFFF" }
+"github.com" = { icon = "", color = "#FFFFFF" }
+"last.fm" = { icon = "", color = "#ba0000" }
+"mail.google.com" = { icon = "", color = "#ad1f1c" }
+"meet.google.com" = { icon = "", color = "#4285f4" }
+"messages.google.com" = { icon = "", color = "#4285f4" }
+"nerdfonts.com" = { icon = "", color = "#ffce3e" }
 "rust-lang.org" = { icon = "", color = "#FFFFFF" }
-"nerdfonts.com" = { icon = "" }
 "slack.com" = { icon = "聆", color = "#2eb67d" }
-vim = { app_id = "foot", icon = "", color = "#8fff6d" }
+"spotify.com" = { icon = "阮", color = "#1ed760" }
+"stackoverflow.com" = { icon = "", color = "#f48225" }
+"startpage.com" = { icon = "", color = "#6573ff" }
+"travis-ci.com" = { icon = "", color = "#cd324a" }
+"twitter.com" = { icon = "", color = "#1d9bf0" }
+"ui.com" = { icon = "直", color = "#004cb6" }
+"www.google.com" = { icon = "", color = "#4285f4" }
+"zoom.us" = { icon = "", color = "#2d8cff" }
+vim = { app_id = ["foot", "Alacritty"], icon = "", color = "#8fff6d" }
+nnn = { app_id = ["foot", "Alacritty"], icon = "", color = "#FFFFFF" }

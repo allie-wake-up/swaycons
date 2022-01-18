@@ -1,7 +1,13 @@
 [package]
 name = "swaycons"
 version = "0.1.0"
+authors = ["Allie Stephan <allie@pointguard.dev>"]
+description = "swaycons adds nerd font icons to sway window titles"
+repository = "https://github.com/thekiteeatingtree/swaycons"
+license = "MIT / Apache-2.0"
+keywords = ["sway", "swaywm", "icons"]
 edition = "2021"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [[bin]]

@@ -25,7 +25,7 @@ fn main() -> Fallible<()> {
             if DEBUG {
                 println!("id: {}, app_id: {}, name: {}", id, app_id, name);
             }
-            match title_set.matches(name.as_str()).iter().next() {
+            match find_best_match(&title_set, &name) {
                 Some(index) => {
                     if let Some(pattern) = title_set.patterns().get(index) {
                         if ignore_entry != pattern {
@@ -77,6 +77,27 @@ fn main() -> Fallible<()> {
         }
     }
     Ok(())
+}
+
+fn find_best_match(title_set: &RegexSet, name: &str) -> Option<usize> {
+    let matches = title_set.matches(name);
+    if matches.len() < 2 {
+        matches.into_iter().next()
+    } else {
+        let mut best_match = None;
+        for m in matches.into_iter()  {
+            if best_match == None {
+                best_match = Some(m);
+            } else {
+                let best = title_set.patterns().get(best_match.unwrap()).unwrap();
+                let current = title_set.patterns().get(m).unwrap();
+                if current.contains(best) {
+                    best_match = Some(m);
+                }
+            }
+        }
+        best_match
+    }
 }
 
 fn set_icon(

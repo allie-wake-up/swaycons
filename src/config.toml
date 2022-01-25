@@ -1,59 +1,70 @@
 [global]
 size = "14pt"
 color = "#FFFFFF"
+focused_color = "#a7c080"
 icon = ""
 
 [app_id]
 "dev.alextren.Spot" = { icon = "阮", color = "#1ed760" }
 "org.gnome.Nautilus" = { icon = "", color = "#6291d6" }
-Alacritty = { icon = "", color = "#FFFFFF" }
+Alacritty = { icon = "" }
+beekeeper-studio = { icon = "", color = "#fad83b" }
+chromium = { icon = "", color = "#a1c2fa" }
 Deezer = { icon = "", color = "#ef5466" }
 Slack = { icon = "聆", color = "#2eb67d" }
 Spotify = { icon = "阮", color = "#1ed760" }
 firefox = { icon = "", color = "#ff8817" }
-foot = { icon = "", color = "#FFFFFF" }
+foot = { icon = "" }
 geary = { icon = "", color = "#f6d32d" }
 gnome-calendar = { icon = "", color = "#3584e4" }
 google-chrome = { icon = "", color = "#4285f4" }
 neovide = { icon = "", color = "#8fff6d" }
 nvim-qt = { icon = "", color = "#8fff6d" }
+shotwell = { icon = "", color = "#4f7aaf" }
 zoom = { icon = "", color = "#2d8cff" }
 1Password = { icon = "", color = "#0572ec" }
 
 [title]
-"192\\.168\\.0\\.1" = { icon = "直", color = "#004cb6" }
-"192\\.168\\.86\\.1" = { icon = "直", color = "#004cb6" }
+"192\\.168\\.0\\.1|192\\.168\\.86\\.1|ui\\.com" = { icon = "直", color = "#004cb6" }
 "1password\\.com" = { icon = "", color = "#0572ec" }
 "amazon\\.com" = { icon = "", color = "#ff9900" }
-"atlassian\\.net" = { icon = "", color = "#0052cc" }
+"angular\\.io" = { icon = "", color = "#dd0031" }
+"archlinux\\.org" = { icon = "", color = "#1793d1" }
+"atlassian\\.(net|com)" = { icon = "", color = "#0052cc" }
+"aws\\.amazon\\.com" = { icon = "", color = "#ff9900" }
 "bitbucket\\.org" = { icon = "", color = "#0052cc" }
 "calendar\\.google\\.com" = { icon = "", color = "#4285f4" }
-"cloud\\.google.com" = { icon = "", color = "#4285f4" }
+"crates\\.io" = { icon = "", color = "#ffc933" }
+"(cloud|developers)\\.google.com" = { icon = "", color = "#4285f4" }
+"docs\\.google\\.com" = { icon = "", color = "#4285f4" }
 "deezer\\.com" = { icon = "", color = "#ef5466" }
-"developers\\.google\\.com" = { icon = "", color = "#4285f4" }
-"docs.rs" = { icon = "", color = "#FFFFFF" }
+"docs\\.rs|rust-lang\\.org" = { icon = "" }
 "drive\\.google\\.com" = { icon = "", color = "#4285f4" }
 "duckduckgo\\.com" = { icon = "", color = "#de5833" }
 "facebook\\.com" = { icon = "", color = "#1877f2" }
 "fastmail\\.com" = { icon = "﫯", color = "#1565c0" }
-"feedbin\\.com" = { icon = "", color = "#FFFFFF" }
-"github\\.com" = { icon = "", color = "#FFFFFF" }
+"feedbin\\.com" = { icon = "" }
+"gitbook\\.com" = { icon = "", color = "#346ddb" }
+"github\\.com" = { icon = "" }
 "keep\\.google\\.com" = { icon = "ﯚ", color = "#fbbc04" }
 "last\\.fm" = { icon = "", color = "#ba0000" }
 "mail\\.google\\.com" = { icon = "", color = "#ad1f1c" }
 "meet\\.google\\.com" = { icon = "", color = "#4285f4" }
 "messages\\.google\\.com" = { icon = "", color = "#4285f4" }
+"mozilla\\.org" = { icon = "" }
 "nerdfonts\\.com" = { icon = "", color = "#ffce3e" }
-"rust-lang\\.org" = { icon = "", color = "#FFFFFF" }
+"photos\\.google\\.com" = { icon = "", color = "#4285f4" }
+"reactjs\\.org" = { icon = "", color = "#61dafb" }
 "slack\\.com" = { icon = "聆", color = "#2eb67d" }
 "spotify\\.com" = { icon = "阮", color = "#1ed760" }
+"sr\\.ht|sourcehut\\.org" = { icon = "" }
 "stackoverflow\\.com" = { icon = "", color = "#f48225" }
 "startpage\\.com" = { icon = "", color = "#6573ff" }
-"travis-ci\\.com" = { icon = "", color = "#cd324a" }
+"stripe\\.com" = { icon = "", color = "#635bff" }
+"travis-ci\\.(com|org)" = { icon = "", color = "#cd324a" }
 "twitter\\.com" = { icon = "", color = "#1d9bf0" }
-"ui\\.com" = { icon = "直", color = "#004cb6" }
 "google\\.com/maps" = { icon = "﫴", color = "#4caf50" }
 "google\\.com" = { icon = "", color = "#4285f4" }
 "zoom\\.us" = { icon = "", color = "#2d8cff" }
 vim = { app_id = ["foot", "Alacritty"], icon = "", color = "#8fff6d" }
-nnn = { app_id = ["foot", "Alacritty"], icon = "", color = "#FFFFFF" }
+nnn = { app_id = ["foot", "Alacritty"], icon = "" }

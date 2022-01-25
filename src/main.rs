@@ -12,6 +12,8 @@ fn main() -> Fallible<()> {
     let app_id_settings = settings.app_id;
     let title_set = RegexSet::new(title_settings.keys()).unwrap();
     let mut ignore: HashMap<i64, String> = HashMap::new();
+    let mut last_focused = None;
+    let mut last_focused_settings: Option<&BaseSettings> = None;
     let mut connection = Connection::new()?;
     for event in Connection::new()?.subscribe([EventType::Window])? {
         if let Event::Window(w) = event? {
@@ -20,6 +22,7 @@ fn main() -> Fallible<()> {
                 Some(properties) => properties.class.unwrap_or_default(),
                 None => w.container.app_id.unwrap_or_default(),
             };
+            let focused = w.container.focused;
             let name = w.container.name.unwrap_or_default();
             let ignore_entry = ignore.entry(id).or_default();
             if DEBUG {
@@ -28,37 +31,87 @@ fn main() -> Fallible<()> {
             match find_best_match(&title_set, &name) {
                 Some(index) => {
                     if let Some(pattern) = title_set.patterns().get(index) {
-                        if ignore_entry != pattern {
+                        if ignore_entry != pattern || (focused && !(last_focused == Some(id))) {
                             let settings = title_settings.get(pattern).unwrap();
                             match settings.app_id.as_ref() {
                                 Some(app_id_match) => {
                                     if app_id_match.contains(&app_id) {
                                         ignore.insert(id, pattern.to_owned());
+                                        if focused {
+                                            if let Some(last_id) = last_focused {
+                                                if let Some(last_settings) = last_focused_settings {
+                                                    set_icon(
+                                                        last_id,
+                                                        last_settings,
+                                                        &global_settings,
+                                                        &mut connection,
+                                                        false,
+                                                    )?;
+                                                }
+                                            }
+                                            last_focused = Some(id);
+                                            last_focused_settings = Some(&settings.base);
+                                        }
                                         set_icon(
                                             id,
                                             &settings.base,
                                             &global_settings,
                                             &mut connection,
+                                            focused,
                                         )?;
                                     } else if let Some(settings) = app_id_settings.get(&app_id) {
                                         if ignore_entry != &app_id {
                                             ignore.insert(id, app_id);
+                                            if focused {
+                                                if let Some(last_id) = last_focused {
+                                                    if let Some(last_settings) =
+                                                        last_focused_settings
+                                                    {
+                                                        set_icon(
+                                                            last_id,
+                                                            last_settings,
+                                                            &global_settings,
+                                                            &mut connection,
+                                                            false,
+                                                        )?;
+                                                    }
+                                                }
+                                                last_focused = Some(id);
+                                                last_focused_settings = Some(&settings);
+                                            }
                                             set_icon(
                                                 id,
                                                 settings,
                                                 &global_settings,
                                                 &mut connection,
+                                                focused,
                                             )?;
                                         }
                                     }
                                 }
                                 None => {
                                     ignore.insert(id, pattern.to_owned());
+                                    if focused {
+                                        if let Some(last_id) = last_focused {
+                                            if let Some(last_settings) = last_focused_settings {
+                                                set_icon(
+                                                    last_id,
+                                                    last_settings,
+                                                    &global_settings,
+                                                    &mut connection,
+                                                    false,
+                                                )?;
+                                            }
+                                        }
+                                        last_focused = Some(id);
+                                        last_focused_settings = Some(&settings.base);
+                                    }
                                     set_icon(
                                         id,
                                         &settings.base,
                                         &global_settings,
                                         &mut connection,
+                                        focused,
                                     )?;
                                 }
                             }
@@ -67,9 +120,24 @@ fn main() -> Fallible<()> {
                 }
                 None => {
                     if let Some(settings) = app_id_settings.get(&app_id) {
-                        if ignore_entry != &app_id {
+                        if ignore_entry != &app_id || (focused && !(last_focused == Some(id))) {
                             ignore.insert(id, app_id);
-                            set_icon(id, settings, &global_settings, &mut connection)?;
+                            if focused {
+                                if let Some(last_id) = last_focused {
+                                    if let Some(last_settings) = last_focused_settings {
+                                        set_icon(
+                                            last_id,
+                                            last_settings,
+                                            &global_settings,
+                                            &mut connection,
+                                            false,
+                                        )?;
+                                    }
+                                }
+                                last_focused = Some(id);
+                                last_focused_settings = Some(&settings);
+                            }
+                            set_icon(id, settings, &global_settings, &mut connection, focused)?;
                         }
                     }
                 }
@@ -85,7 +153,7 @@ fn find_best_match(title_set: &RegexSet, name: &str) -> Option<usize> {
         matches.into_iter().next()
     } else {
         let mut best_match = None;
-        for m in matches.into_iter()  {
+        for m in matches.into_iter() {
             if best_match == None {
                 best_match = Some(m);
             } else {
@@ -105,8 +173,13 @@ fn set_icon(
     settings: &BaseSettings,
     global_settings: &GlobalSettings,
     connection: &mut Connection,
+    focused: bool,
 ) -> Fallible<()> {
-    let color = settings.color.as_ref().unwrap_or(&global_settings.color);
+    let color = if focused && global_settings.focused_color.is_some() {
+        global_settings.focused_color.as_ref().unwrap()
+    } else {
+        settings.color.as_ref().unwrap_or(&global_settings.color)
+    };
     let icon = settings.icon.as_ref().unwrap_or(&global_settings.icon);
     let size = settings.size.as_ref().unwrap_or(&global_settings.size);
     connection.run_command(format!(

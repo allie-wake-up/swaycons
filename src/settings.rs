@@ -5,20 +5,22 @@ use xdg::BaseDirectories;
 #[derive(Clone, Debug)]
 pub struct GlobalSettings {
     pub color: String,
+    pub focused_color: Option<String>,
     pub icon: String,
     pub size: String,
 }
 
 impl GlobalSettings {
-    pub fn new(color: String, icon: String, size: String) -> GlobalSettings {
-        GlobalSettings { color, icon, size }
+    pub fn new(color: String, focused_color: Option<String>, icon: String, size: String) -> GlobalSettings {
+        GlobalSettings { color, focused_color, icon, size }
     }
 
     pub fn from(mut config: HashMap<String, String>) -> GlobalSettings {
         let color = config.remove("color").unwrap();
+        let focused_color = config.remove("focused_color");
         let icon = config.remove("icon").unwrap();
         let size = config.remove("size").unwrap();
-        GlobalSettings { color, icon, size }
+        GlobalSettings { color, focused_color, icon, size }
     }
 }
 

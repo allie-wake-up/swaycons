@@ -1,7 +1,7 @@
 [global]
 size = "14pt"
 color = "#FFFFFF"
-focused_color = "#a7c080"
+focused_color = "#FFFFFF"
 icon = ""
 
 [app_id]

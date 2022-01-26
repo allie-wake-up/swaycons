@@ -1,18 +1,19 @@
 [global]
-size = "14pt"
 color = "#FFFFFF"
 focused_color = "#FFFFFF"
 icon = ""
+size = "14pt"
 
 [app_id]
 "dev.alextren.Spot" = { icon = "阮", color = "#1ed760" }
 "org.gnome.Nautilus" = { icon = "", color = "#6291d6" }
+1Password = { icon = "", color = "#0572ec" }
 Alacritty = { icon = "" }
-beekeeper-studio = { icon = "", color = "#fad83b" }
-chromium = { icon = "", color = "#a1c2fa" }
 Deezer = { icon = "", color = "#ef5466" }
 Slack = { icon = "聆", color = "#2eb67d" }
 Spotify = { icon = "阮", color = "#1ed760" }
+beekeeper-studio = { icon = "", color = "#fad83b" }
+chromium = { icon = "", color = "#a1c2fa" }
 firefox = { icon = "", color = "#ff8817" }
 foot = { icon = "" }
 geary = { icon = "", color = "#f6d32d" }
@@ -22,9 +23,9 @@ neovide = { icon = "", color = "#8fff6d" }
 nvim-qt = { icon = "", color = "#8fff6d" }
 shotwell = { icon = "", color = "#4f7aaf" }
 zoom = { icon = "", color = "#2d8cff" }
-1Password = { icon = "", color = "#0572ec" }
 
 [title]
+"(cloud|developers)\\.google.com" = { icon = "", color = "#4285f4" }
 "192\\.168\\.0\\.1|192\\.168\\.86\\.1|ui\\.com" = { icon = "直", color = "#004cb6" }
 "1password\\.com" = { icon = "", color = "#0572ec" }
 "amazon\\.com" = { icon = "", color = "#ff9900" }
@@ -35,9 +36,8 @@ zoom = { icon = "", color = "#2d8cff" }
 "bitbucket\\.org" = { icon = "", color = "#0052cc" }
 "calendar\\.google\\.com" = { icon = "", color = "#4285f4" }
 "crates\\.io" = { icon = "", color = "#ffc933" }
-"(cloud|developers)\\.google.com" = { icon = "", color = "#4285f4" }
-"docs\\.google\\.com" = { icon = "", color = "#4285f4" }
 "deezer\\.com" = { icon = "", color = "#ef5466" }
+"docs\\.google\\.com" = { icon = "", color = "#4285f4" }
 "docs\\.rs|rust-lang\\.org" = { icon = "" }
 "drive\\.google\\.com" = { icon = "", color = "#4285f4" }
 "duckduckgo\\.com" = { icon = "", color = "#de5833" }
@@ -46,6 +46,8 @@ zoom = { icon = "", color = "#2d8cff" }
 "feedbin\\.com" = { icon = "" }
 "gitbook\\.com" = { icon = "", color = "#346ddb" }
 "github\\.com" = { icon = "" }
+"google\\.com" = { icon = "", color = "#4285f4" }
+"google\\.com/maps" = { icon = "﫴", color = "#4caf50" }
 "keep\\.google\\.com" = { icon = "ﯚ", color = "#fbbc04" }
 "last\\.fm" = { icon = "", color = "#ba0000" }
 "mail\\.google\\.com" = { icon = "", color = "#ad1f1c" }
@@ -63,8 +65,6 @@ zoom = { icon = "", color = "#2d8cff" }
 "stripe\\.com" = { icon = "", color = "#635bff" }
 "travis-ci\\.(com|org)" = { icon = "", color = "#cd324a" }
 "twitter\\.com" = { icon = "", color = "#1d9bf0" }
-"google\\.com/maps" = { icon = "﫴", color = "#4caf50" }
-"google\\.com" = { icon = "", color = "#4285f4" }
 "zoom\\.us" = { icon = "", color = "#2d8cff" }
-vim = { app_id = ["foot", "Alacritty"], icon = "", color = "#8fff6d" }
 nnn = { app_id = ["foot", "Alacritty"], icon = "" }
+vim = { app_id = ["foot", "Alacritty"], icon = "", color = "#8fff6d" }

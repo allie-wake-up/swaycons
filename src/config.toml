@@ -1,7 +1,7 @@
 [global]
 color = "#FFFFFF"
 focused_color = "#FFFFFF"
-icon = ""
+icon = "类"
 size = "14pt"
 
 [app_id]
@@ -63,8 +63,12 @@ zoom = { icon = "", color = "#2d8cff" }
 "stackoverflow\\.com" = { icon = "", color = "#f48225" }
 "startpage\\.com" = { icon = "", color = "#6573ff" }
 "stripe\\.com" = { icon = "", color = "#635bff" }
+"todoist\\.com" = { icon = "", color = "#e44232" }
 "travis-ci\\.(com|org)" = { icon = "", color = "#cd324a" }
 "twitter\\.com" = { icon = "", color = "#1d9bf0" }
 "zoom\\.us" = { icon = "", color = "#2d8cff" }
 nnn = { app_id = ["foot", "Alacritty"], icon = "" }
 vim = { app_id = ["foot", "Alacritty"], icon = "", color = "#8fff6d" }
+pgcli = { app_id = ["foot", "Alacritty"], icon = "", color = "#c74451" }
+litecli = { app_id = ["foot", "Alacritty"], icon = "", color = "#c74451" }
+aerc = { app_id = ["foot", "Alacritty"], icon = "" }

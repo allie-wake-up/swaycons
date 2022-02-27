@@ -89,5 +89,5 @@ This plugin is extremely useful when using sway tabs instead of browser tabs.  T
 1. Open Firefox Settings and Disable `Open links in tabs instead of new windows`
 2. Install [Tab-less](https://github.com/iainbeeston/tab-less) from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/search/?q=tab-less)
 3. Install [Add URL To Window Title](https://github.com/erichgoldman/add-url-to-window-title) from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/add-url-to-window-title/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
- a. Open the settings for this plugin, check `Show the full URL?` and hit `Save Settings`
+   - Open the settings for this plugin, check `Show the full URL?` and hit `Save Settings`
 4. Hide the tab bar - directions are in the sidebery github wiki here: https://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)#firefox-styles-snippets-via-userchromecss

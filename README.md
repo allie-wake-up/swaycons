@@ -24,20 +24,20 @@ font pango:FuraCode Nerd Font 11
 
 ## Usage
 
-    - run `swaycons`
-    - recommend adding something like `exec swaycons` to sway config
+- run `swaycons`
+- recommend adding something like `exec swaycons` to sway config
 
 
 ## Config
 
-    - by default the config file should be placed at `~/.config/swaycons/config.toml`, but it will look for `swaycons/config.toml` in whatever your configured XDG config folder is.
-    - the default config is included in the binary and can be viewed [here](src/config.toml)
-    - Your custom config will add to the default config
-    - The best place to find icons for nerd fonts is the [nerd fonts cheat sheet](https://www.nerdfonts.com/cheat-sheet)
-    - learn about pango Attributes [here](https://docs.gtk.org/Pango/pango_markup.html#the-span-attributes)
-    - to find the `app_id` or `class` I recommend running `swaymsg -t get_tree | less` and using `/` to search for the app you're looking for
-    - There are a lot of great resources to learn how to write regular expressions out there.  The examples in the title section will cover most simple cases though.
-    - Here is an example with comments:
+- by default the config file should be placed at `~/.config/swaycons/config.toml`, but it will look for `swaycons/config.toml` in whatever your configured XDG config folder is.
+- the default config is included in the binary and can be viewed [here](src/config.toml)
+- Your custom config will add to the default config
+- The best place to find icons for nerd fonts is the [nerd fonts cheat sheet](https://www.nerdfonts.com/cheat-sheet)
+- learn about pango Attributes [here](https://docs.gtk.org/Pango/pango_markup.html#the-span-attributes)
+- to find the `app_id` or `class` I recommend running `swaymsg -t get_tree | less` and using `/` to search for the app you're looking for
+- There are a lot of great resources to learn how to write regular expressions out there.  The examples in the title section will cover most simple cases though.
+- Here is an example with comments:
 
 ```toml
 
@@ -89,5 +89,5 @@ This plugin is extremely useful when using sway tabs instead of browser tabs.  T
 1. Open Firefox Settings and Disable `Open links in tabs instead of new windows`
 2. Install [Tab-less](https://github.com/iainbeeston/tab-less) from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/search/?q=tab-less)
 3. Install [Add URL To Window Title](https://github.com/erichgoldman/add-url-to-window-title) from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/add-url-to-window-title/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
-    a. Open the settings for this plugin, check `Show the full URL?` and hit `Save Settings`
+ a. Open the settings for this plugin, check `Show the full URL?` and hit `Save Settings`
 4. Hide the tab bar - directions are in the sidebery github wiki here: https://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)#firefox-styles-snippets-via-userchromecss

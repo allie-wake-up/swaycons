@@ -40,7 +40,7 @@ fn main() -> Fallible<()> {
                     if pattern.is_some() {
                         ignore_matcher = match pattern {
                             Some(p) => Some(p.to_string()),
-                            None => None
+                            None => None,
                         };
                         let settings = title_settings.get(pattern.unwrap()).unwrap();
                         &settings.base
@@ -82,8 +82,12 @@ fn main() -> Fallible<()> {
                     }
                 }
                 last_focused = Some(id);
+            }
+
+            if focused {
                 last_focused_settings = Some(&settings);
             }
+
             ignore.insert(id, ignore_matcher);
         }
     }

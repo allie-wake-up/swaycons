@@ -17,7 +17,14 @@ impl GlobalSettings {
 
     pub fn from(mut config: HashMap<String, String>) -> GlobalSettings {
         let color = config.remove("color").unwrap();
-        let focused_color = config.remove("focused_color");
+        let focused_color = match config.remove("focused_color") {
+            Some(color) => if color.len() == 7 && color.starts_with("#") {
+                Some(color)
+            } else {
+                None
+            },
+            None => None
+        };
         let icon = config.remove("icon").unwrap();
         let size = config.remove("size").unwrap();
         GlobalSettings { color, focused_color, icon, size }

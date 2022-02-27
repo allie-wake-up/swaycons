@@ -13,8 +13,8 @@ Deezer = { icon = "", color = "#ef5466" }
 Slack = { icon = "聆", color = "#2eb67d" }
 Spotify = { icon = "阮", color = "#1ed760" }
 beekeeper-studio = { icon = "", color = "#fad83b" }
-chromium = { icon = "", color = "#a1c2fa" }
-firefox = { icon = "", color = "#ff8817" }
+chromium = { icon = "", color = "#a1c2fa", size = "13pt" }
+firefox = { icon = "", color = "#ff8817", size = "13pt" }
 foot = { icon = "" }
 geary = { icon = "", color = "#f6d32d" }
 gnome-calendar = { icon = "", color = "#3584e4" }
@@ -38,8 +38,9 @@ zoom = { icon = "", color = "#2d8cff" }
 "crates\\.io" = { icon = "", color = "#ffc933" }
 "deezer\\.com" = { icon = "", color = "#ef5466" }
 "docs\\.google\\.com" = { icon = "", color = "#4285f4" }
-"docs\\.rs|rust-lang\\.org" = { icon = "" }
+"docs\\.rs|rust-lang\\.org" = { icon = "", size = "16pt" }
 "drive\\.google\\.com" = { icon = "", color = "#4285f4" }
+"dropbox\\.com" = { icon = "", color = "#0061fe" }
 "duckduckgo\\.com" = { icon = "", color = "#de5833" }
 "facebook\\.com" = { icon = "", color = "#1877f2" }
 "fastmail\\.com" = { icon = "﫯", color = "#1565c0" }
@@ -57,6 +58,7 @@ zoom = { icon = "", color = "#2d8cff" }
 "nerdfonts\\.com" = { icon = "", color = "#ffce3e" }
 "photos\\.google\\.com" = { icon = "", color = "#4285f4" }
 "reactjs\\.org" = { icon = "", color = "#61dafb" }
+"reddit\\.com" = { icon = "樓", color = "#ff4500" }
 "slack\\.com" = { icon = "聆", color = "#2eb67d" }
 "spotify\\.com" = { icon = "阮", color = "#1ed760" }
 "sr\\.ht|sourcehut\\.org" = { icon = "" }

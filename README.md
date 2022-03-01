@@ -85,7 +85,7 @@ neovide = { icon = "", color = "#8fff6d" }
 vim = { app_id = ["foot", "Alacritty"], icon = "", color = "#8fff6d" }
 ```
 
-## Using Sway Tabs for Firefox
+## Replace Firefox Tabs with Sway Tabs
 
 This plugin is extremely useful when using sway tabs instead of browser tabs.  To get this working properly with Firefox a few steps and plugins are necessary:
 

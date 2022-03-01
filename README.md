@@ -2,7 +2,19 @@
 
 Window Icons in Sway with Nerd Fonts!
 
-Go from ![before](/screenshots/before.png) to ![after](/screenshots/after.png)
+## Why?
+
+- I heavily use sway tabs and adding icons makes it a lot easier to visually pick out the window that I'm looking for.
+- Sway issue discussing window icons: https://github.com/swaywm/sway/issues/4882
+- Workarounds using just the sway config have significant limitations. Sway will only trigger changes for `for_window [title="firefox"] title_format {icon} %title` type configs once.  That makes it less than ideal for icons in many cases.
+- Because swaycons has a default config included, it's a lot simpler to get running than configuring font icons manually in a sway config
+
+Go from 
+![before](/screenshots/before.png)
+
+to
+
+![after](/screenshots/after.png)
 
 ## Installation
 

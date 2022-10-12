@@ -38,6 +38,7 @@ font pango:FuraCode Nerd Font 11
 
 - run `swaycons`
 - recommend adding something like `exec swaycons` to sway config
+- swaycons must be restarted after config changes
 
 
 ## Config

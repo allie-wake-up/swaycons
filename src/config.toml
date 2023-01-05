@@ -44,6 +44,7 @@ zoom = { icon = "", color = "#2d8cff" }
 "duckduckgo\\.com" = { icon = "", color = "#de5833" }
 "facebook\\.com" = { icon = "", color = "#1877f2" }
 "fastmail\\.com" = { icon = "﫯", color = "#1565c0" }
+"fastmail\\.com/calendar" = { icon = "", color = "#1565c0" }
 "feedbin\\.com" = { icon = "" }
 "gitbook\\.com" = { icon = "", color = "#346ddb" }
 "github\\.com" = { icon = "" }

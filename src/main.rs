@@ -138,9 +138,11 @@ fn set_icon(
     };
     let icon = settings.icon.as_ref().unwrap_or(&global_settings.icon);
     let size = settings.size.as_ref().unwrap_or(&global_settings.size);
+    let separator = &global_settings.separator;
+
     connection.run_command(format!(
-        "[con_id={}] title_format \"<span color='{}' size='{}'>{}</span> %title\"",
-        id, color, size, icon
+        "[con_id={}] title_format \"<span color='{}' size='{}'>{}</span>{}%title\"",
+        id, color, size, icon, separator
     ))?;
     Ok(())
 }

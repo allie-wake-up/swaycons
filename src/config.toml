@@ -3,6 +3,7 @@ color = "#FFFFFF"
 focused_color = "#FFFFFF"
 icon = "类"
 size = "14pt"
+separator = " "
 
 [app_id]
 "dev.alextren.Spot" = { icon = "阮", color = "#1ed760" }
@@ -57,7 +58,7 @@ zoom = { icon = "", color = "#2d8cff" }
 "facebook\\.com" = { icon = "", color = "#1877f2" }
 "fastmail\\.com" = { icon = "﫯", color = "#1565c0" }
 "fastmail\\.com/calendar" = { icon = "", color = "#1565c0" }
-"fastmail\\.com/contacts" = { size="11pt", icon = "", color = "#1565c0" }
+"fastmail\\.com/contacts" = { size = "11pt", icon = "", color = "#1565c0" }
 "feedbin\\.com" = { icon = "" }
 "gitbook\\.com" = { icon = "", color = "#346ddb" }
 "github\\.com" = { icon = "" }

@@ -60,6 +60,7 @@ color = "#FFFFFF" # this must be a valid color
 focused_color = "#FFFFFF" # to disable a focused_color set this to ""
 icon = "类" # to disable a default icon just set this to ""
 size = "14pt" # must be a valid pango size value
+separator = " " # anything between the icon and window title
 
 # app_id section.  This does an exact string comparison to the app_id or
 # window_properties.class value reported in swaymsg -t get_tree for the window

@@ -8,11 +8,24 @@ pub struct GlobalSettings {
     pub focused_color: Option<String>,
     pub icon: String,
     pub size: String,
+    pub separator: String,
 }
 
 impl GlobalSettings {
-    pub fn new(color: String, focused_color: Option<String>, icon: String, size: String) -> GlobalSettings {
-        GlobalSettings { color, focused_color, icon, size }
+    pub fn new(
+        color: String,
+        focused_color: Option<String>,
+        icon: String,
+        size: String,
+        separator: String,
+    ) -> GlobalSettings {
+        GlobalSettings {
+            color,
+            focused_color,
+            icon,
+            size,
+            separator,
+        }
     }
 
     pub fn from(mut config: HashMap<String, String>) -> GlobalSettings {
@@ -27,7 +40,16 @@ impl GlobalSettings {
         };
         let icon = config.remove("icon").unwrap();
         let size = config.remove("size").unwrap();
-        GlobalSettings { color, focused_color, icon, size }
+        let separator = config
+            .remove("separator")
+            .unwrap_or(String::from(" "));
+        GlobalSettings {
+            color,
+            focused_color,
+            icon,
+            size,
+            separator,
+        }
     }
 }
 

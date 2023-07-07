@@ -92,6 +92,7 @@ libreoffice-calc = { icon = "󰱿", color = "#00A500" }
 "webpack\\.js\\.org" = { icon = "󰆧", color = "#8ed6fb" }
 "wikipedia\\.org" = { icon = "" }
 "youneedabudget\\.com" = { icon = "", color = "#4495d7" }
+"bandcamp\\.com" = { icon = "", color = "#1da0c3", size = "13pt" }
 "zoom\\.us" = { icon = "󰕧", color = "#2d8cff" }
 aerc = { app_id = ["foot", "Alacritty"], icon = "󰇰" }
 litecli = { app_id = ["foot", "Alacritty"], icon = "󰆼", color = "#c74451" }

@@ -58,7 +58,7 @@ font pango:FuraCode Nerd Font 11
 [global]
 color = "#FFFFFF" # this must be a valid color
 focused_color = "#FFFFFF" # to disable a focused_color set this to ""
-icon = "类" # to disable a default icon just set this to ""
+icon = "󰖯" # to disable a default icon just set this to ""
 size = "14pt" # must be a valid pango size value
 separator = " " # anything between the icon and window title
 
@@ -79,11 +79,11 @@ neovide = { icon = "", color = "#8fff6d" }
 # google\\.com
 [title]
 # escape . for an exact match.  Normally . matches any character
-"crates\\.io" = { icon = "", color = "#ffc933" }
+"crates\\.io" = { icon = "󰏗", color = "#ffc933" }
 "github\\.com" = { icon = "" }
 "google\\.com" = { icon = "", color = "#4285f4" }
-"google\\.com/maps" = { icon = "﫴", color = "#4caf50" }
-"mail\\.google\\.com" = { icon = "", color = "#ad1f1c" }
+"google\\.com/maps" = { icon = "󰗵", color = "#4caf50" }
+"mail\\.google\\.com" = { icon = "󰊫", color = "#ad1f1c" }
 
 # use | for or
 "sr\\.ht|sourcehut\\.org" = { icon = "" }
@@ -105,6 +105,5 @@ This plugin is extremely useful when using sway tabs instead of browser tabs.  T
 
 1. Open Firefox Settings and Disable `Open links in tabs instead of new windows`
 2. Install [Tab-less](https://github.com/iainbeeston/tab-less) from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/search/?q=tab-less)
-3. Install [Add URL To Window Title](https://github.com/erichgoldman/add-url-to-window-title) from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/add-url-to-window-title/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
-   - Open the settings for this plugin, check `Show the full URL?` and hit `Save Settings`
-4. Hide the tab bar - directions are in the sidebery github wiki here: https://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)#firefox-styles-snippets-via-userchromecss
+3. Install [URL in Title](https://github.com/M-Gregoire/Firefox-AddUrlToWindowsTitle) from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/url-in-title-keepass/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+4. Hide the tab bar - directions are in the [sidebery github wiki](https://github.com/mbnuqw/sidebery/wiki/Firefox-Styles-Snippets-(via-userChrome.css)#firefox-styles-snippets-via-userchromecss)
